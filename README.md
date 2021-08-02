@@ -1,4 +1,4 @@
-## 全世界无产者，联合起来！
+## 物质不灭  不过粉碎
 
 You can use the [editor on GitHub](https://github.com/c1921/c1921.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
