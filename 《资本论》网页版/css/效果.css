@@ -8,9 +8,20 @@ body{
     border: #ff0000;
 }
 .main{
-    width: 40%;
-    margin-left:auto;
-    margin-right: auto;
+    padding: 40px 500px;
+    text-align: left;
     color: #cccccc;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+    .main {
+        padding: 40px 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        padding: 40px 10%;
+    }
 }
