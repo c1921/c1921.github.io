@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #252525;
+    
+}
+* {
+    border: #ff0000;
+}
+.main{
+    width: 40%;
+    margin-left:auto;
+    margin-right: auto;
+    color: #cccccc;
+    font-size: 20px;
+}
