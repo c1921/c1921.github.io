@@ -16,13 +16,13 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
-    .main {
+    .main,.footnote {
         padding: 40px 30%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .main {
+    .main,.footnote {
         padding: 40px 10%;
     }
 }
@@ -44,6 +44,6 @@ a {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    padding: 40px;
+    padding: 40px 20%;
     text-align: center;
 }
