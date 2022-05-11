@@ -1,4 +1,18 @@
-.toc{overflow-y:auto}.toc>ul{overflow:hidden;position:relative}.toc>ul li{list-style:none}.toc-list{list-style-type:none;margin:0;padding-left:15px}
+.toc{
+    overflow-y:auto
+}
+.toc>ul{
+    overflow:hidden;
+    position:relative
+}
+.toc>ul li{
+    list-style:none
+}
+.toc-list{
+    list-style-type:none;
+    margin:0;
+    padding-left:15px
+}
 
 .js-toc{
     padding-left: 5px;
@@ -46,7 +60,7 @@ a.toc-link{
     left:0;
     margin-top:-1px;
     position:absolute;
-    width:2px
+    width:4px
 }
 .is-active-link::before{
     background-color:#bc4b4b
