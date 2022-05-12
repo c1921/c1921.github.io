@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #161616;
+
+}
+
+.sidebar {
+    position: fixed;
+    width: 20%;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 800px) {
+    .content > * {
+        display: none;
+    }
+}
+
+.main,.footnote,.index-1{
+    width: 800px;
+    padding: 40px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: #cccccc;
+    font-size: 20px;
+}
+
+.main {
+    background-color: #252525;
+    font-family: "宋体";
+}
+
+.footnote {
+    font-family: "仿宋";
+}
+
+.footnote-line {
+   padding: 15px; 
+}
+
+@media screen and (max-width: 1600px) {
+    .main,.footnote {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main,.footnote {
+        width: 100%;
+        padding: 40px 10%;
+    }
+}
+
+p {
+    text-indent: 2em;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+.part {
+    font-size: 50px;
+    font-weight: bold;
+    text-indent: unset;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+/* ============================================= */
+/* 书籍索引页图标 */
+
+.top-icons {
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.icons li a > * {
+    display: block;
+}
+
+.icons {
+    list-style-type: none;
+    display: inline;
+}
+
+.icons li {
+    float: left;
+}
+
+.icon {
+    width: 30px;
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .icon {
+        width: 30px;
+        padding: 0px 10px;
+    }
+}
+
+.icons li a img {
+    opacity: 0.5;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.icons li a img:hover {
+    opacity: 1;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
