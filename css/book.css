@@ -5,18 +5,6 @@ body {
 
 }
 
-.sidebar {
-    position: fixed;
-    width: 20%;
-    overflow: scroll;
-}
-
-@media screen and (max-width: 800px) {
-    .content > * {
-        display: none;
-    }
-}
-
 .main,.footnote,.index-1{
     width: 800px;
     padding: 40px 50px;
