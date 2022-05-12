@@ -54,6 +54,7 @@
 }
 
 #open {
+    width: 36px;
     position: fixed;
     cursor:pointer;
     padding: 30px;
