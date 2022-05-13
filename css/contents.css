@@ -2,11 +2,11 @@ body {
     margin: 0;
     height: 100vh;
     background-color: #161616;
-    line-height: 1.7;
     color: #cccccc;
+    line-height: 1.7;
 }
 
-.main,.footnote,.index-1{
+.main {
     width: 800px;
     padding: 40px 50px;
     margin-left: auto;
@@ -14,61 +14,65 @@ body {
     text-align: left;
     color: #cccccc;
     font-size: 20px;
-}
-
-.main {
     background-color: #252525;
-    font-family: "宋体";
-}
-
-.footnote {
-    font-family: "仿宋";
-}
-
-.footnote-line {
-   padding: 15px; 
 }
 
 @media screen and (max-width: 1600px) {
-    .main,.footnote {
+    .main {
         width: 100%;
+        padding: 50px 0px;
     }
 }
 
-@media screen and (max-width: 800px) {
-    .main,.footnote {
-        width: 100%;
-        padding: 40px 10%;
-    }
+.header {
+    text-align: center;
+    font-family: "宋体";
+    font-size: 40px;
 }
 
-p {
-    text-indent: 2em;
+.author {
+    font-size: 40px;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+.manifesto {
+    color: #ff0000;
+    font-size: 30px;
+    font-family: "黑体";
+    text-align: center;
+    padding: 80px 0px;
+}
+
+h2,h3,h4,h5,h6 {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
 }
 
 a {
-    color: brown;
+    color: #cccccc;
     text-decoration: none;
 }
 
-.part {
-    font-size: 50px;
-    font-weight: bold;
-    text-indent: unset;
-    padding: 40px 0px;
-    text-align: center;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    padding: 40px 0px;
-    text-align: center;
-}
-
-
 
 .top-icons {
-    padding: 40px 40px;
+    padding: 0px 40px;
     text-align: center;
+    position: fixed;
 }
 
 .icons li a > * {
