@@ -2,19 +2,43 @@
 <html>
 <head>
 <meta charset="utf-8">
-
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
-  //滚动时保存滚动位置
-  $(window).scroll(function(){
-   if($(document).scrollTop()!=0){
-     sessionStorage.setItem("offsetTop", $(window).scrollTop());
-   }
-  });
-  //onload时，取出并滚动到上次保存位置
-  window.onload = function(){
-   var offset = sessionStorage.getItem("offsetTop");
-   $(document).scrollTop(offset);
-  };
+  window.onbeforeunload = function () {
+    var scrollPos, height;
+    if (typeof window.pageYOffset != 'undefined') {
+        scrollPos = window.pageYOffset;
+    } else if (typeof document.compatMode != 'undefined' &&
+        document.compatMode != 'BackCompat') {
+        scrollPos = document.documentElement.scrollTop;
+    } else if (typeof document.body != 'undefined') {
+        scrollPos = document.body.scrollTop;
+
+    }
+    height = document.body.scrollHeight;
+    document.cookie = "scrollTop=" + scrollPos; //存储滚动条位置到cookies中
+    document.cookie = "height=" + height; //存储滚动条位置到cookies中
+}
+new Vue({
+　　el:'#app',
+　　
+　　updated: function () {
+    　　var height;
+    　　//获取之前的页面高度
+    　　if (document.cookie.match(/height=([^;]+)(;|$)/) != null) {
+        　　var arr = document.cookie.match(/height=([^;]+)(;|$)/); //cookies中不为空，则读取页面高度
+        　　height = parseInt(arr[1]);
+    　　}
+    　　//获取之前的滚动条位置
+    　　if (document.body.scrollHeight == height) {
+       　　 if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) {
+            　　var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/); //cookies中不为空，则读取滚动条位置
+            　　document.documentElement.scrollTop = parseInt(arr[1]);
+            　　document.body.scrollTop = parseInt(arr[1]);
+        　　}
+    　　}
+　　}
+})
   </script>
 </head>
 <body>
