@@ -66,8 +66,15 @@ h4 {
 a {
     color: #cccccc;
     text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
+a:hover {
+    color: #ffffff;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
 
 .top-icons {
     padding: 0px 40px;
