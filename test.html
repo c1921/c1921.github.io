@@ -2,6 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
+
+<script>
+  //滚动时保存滚动位置
+  $(window).scroll(function(){
+   if($(document).scrollTop()!=0){
+     sessionStorage.setItem("offsetTop", $(window).scrollTop());
+   }
+  });
+  //onload时，取出并滚动到上次保存位置
+  window.onload = function(){
+   var offset = sessionStorage.getItem("offsetTop");
+   $(document).scrollTop(offset);
+  };
+  </script>
 </head>
 <body>
     <p>111111111111111111111111111111</p>
@@ -99,19 +113,7 @@
     <p>111111111111111111111111111111</p>
     <p>1111111111111111</p>
 
-    <script>
-      //滚动时保存滚动位置
-      $(window).scroll(function(){
-       if($(document).scrollTop()!=0){
-         sessionStorage.setItem("offsetTop", $(window).scrollTop());
-       }
-      });
-      //onload时，取出并滚动到上次保存位置
-      window.onload = function(){
-       var offset = sessionStorage.getItem("offsetTop");
-       $(document).scrollTop(offset);
-      };
-      </script>
+    
 
 </body>
 </html>
