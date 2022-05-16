@@ -14,6 +14,7 @@ body {
     text-align: left;
     color: #cccccc;
     font-size: 20px;
+    overflow: auto;
 }
 
 .main {
@@ -111,4 +112,13 @@ h1,h2,h3,h4,h5,h6 {
 .footer {
     font-size: small;
     padding: 50px 50px;
+}
+
+.sign {
+    text-align:center;
+    float: right;
+}
+
+.sign-date {
+    font-size: 18px;
 }
