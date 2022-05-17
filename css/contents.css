@@ -7,14 +7,16 @@ body {
 }
 
 .main {
-    width: 800px;
+    width: 600px;
     padding: 40px 50px;
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
     color: #cccccc;
-    font-size: 20px;
+    font-size: 26px;
     background-color: #252525;
+    font-family: "宋体";
 }
 
 @media screen and (max-width: 1600px) {
@@ -52,15 +54,15 @@ h2,h3,h4,h5,h6 {
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 h4 {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 a {
@@ -71,7 +73,7 @@ a {
 }
 
 a:hover {
-    color: #ffffff;
+    color: #ff5858;;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
@@ -122,4 +124,10 @@ a:hover {
 .footer {
     font-size: small;
     padding: 50px 50px;
+}
+
+ul {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
