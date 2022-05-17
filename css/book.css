@@ -98,13 +98,13 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-.icons li a img,.foot-icons img {
+.icons li a img,.foot-icons img{
     opacity: 0.5;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
-.icons li a img,.foot-icons img:hover {
+.icons li a img:hover,.foot-icons img:hover {
     opacity: 1;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
