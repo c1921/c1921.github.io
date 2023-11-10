@@ -102,19 +102,15 @@ a, body {
     background-color: #316b33;
 }
 
-.button-tex {
+.button-web {
     background-color: #525252;
 }
 
-.button-log {
-    background-color: #525252;
-}
-
-.button-pdf:hover, .button-tex:hover, .button-log:hover {
+.button-pdf:hover, .button-web:hover, .button-log:hover {
     box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(255, 239, 239, 0.19);
 }
 
-.button-pdf:hover .icon, .button-tex:hover .icon, .button-log:hover .icon {
+.button-pdf:hover .icon, .button-web:hover .icon, .button-log:hover .icon {
     opacity: 1;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;

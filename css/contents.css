@@ -82,6 +82,19 @@ a:hover {
     padding: 0px 40px;
     text-align: center;
     position: fixed;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 500px) {
+    .top-icons {
+        top: 0;
+        width: 100%;
+        padding: 15px 20px 5px;
+        text-align: center;
+        position: fixed;
+        background-color: #141414;
+    }
 }
 
 .icons li a > * {
