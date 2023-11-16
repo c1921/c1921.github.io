@@ -53,6 +53,9 @@ main {
 }
 
 .book {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     background-color: #353535;
     border-radius: 8px;
     box-shadow: 0 4px 8px #0000001a;
@@ -64,10 +67,10 @@ main {
 .cover {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 20px;
     text-align: center;
-    
+    height: 80%;
 }
 
 .book-title {
